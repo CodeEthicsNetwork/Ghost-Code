@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frontend Development Roadmap - GhostCode 2">
+    <title>Frontend Roadmap</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Floating Boo Ghosts */
+        .boo-ghost {
+            position: absolute;
+            z-index: 10;
+            width: 100px;
+            height: 100px;
+            animation: float 10s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        /* Position Boo Ghosts at random positions */
+        .boo-ghost1 {
+            top: 30%;
+            left: 10%;
+        }
+        .boo-ghost2 {
+            top: 50%;
+            left: 70%;
+        }
+        .boo-ghost3 {
+            top: 70%;
+            left: 40%;
+        }
+        .boo-ghost4 {
+            top: 20%;
+            left: 80%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/ghost-logo.png" alt="GhostCode Logo">
+            <h1>Frontend Roadmap</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#topics">Topics</a></li>
+                <li><a href="backend.html">Backend</a></li>
+                <li><a href="fullstack.html">Fullstack</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Boo Ghost Images (Floating) -->
+    <img src="images/boo-ghost1.png" alt="Boo Ghost 1" class="boo-ghost boo-ghost1">
+    <img src="images/boo-ghost2.png" alt="Boo Ghost 2" class="boo-ghost boo-ghost2">
+    <img src="images/boo-ghost3.png" alt="Boo Ghost 3" class="boo-ghost boo-ghost3">
+    <img src="images/boo-ghost4.png" alt="Boo Ghost 4" class="boo-ghost boo-ghost4">
+
+    <main>
+        <section id="topics" class="roadmaps">
+            <h2>Frontend Topics</h2>
+            <div class="roadmap-container">
+                <!-- HTML Card -->
+                <div class="roadmap-card">
+                    <img src="images/html-topic.png" alt="HTML">
+                    <h3>HTML Basics</h3>
+                    <p>Learn the foundation of web structure.</p>
+                    <button onclick="showMessage('HTML')">Learn More</button>
+                </div>
+                <!-- CSS Card -->
+                <div class="roadmap-card">
+                    <img src="images/css-topic.png" alt="CSS">
+                    <h3>CSS Styling</h3>
+                    <p>Master the art of web design.</p>
+                    <button onclick="showMessage('CSS')">Learn More</button>
+                </div>
+                <!-- JavaScript Card -->
+                <div class="roadmap-card">
+                    <img src="images/js-topic.png" alt="JavaScript">
+                    <h3>JavaScript</h3>
+                    <p>Add interactivity to your website.</p>
+                    <button onclick="showMessage('JavaScript')">Learn More</button>
+                </div>
+                <!-- React Card -->
+                <div class="roadmap-card">
+                    <img src="images/react-topic.png" alt="React">
+                    <h3>React.js</h3>
+                    <p>Build modern web apps efficiently.</p>
+                    <button onclick="showMessage('React.js')">Learn More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 GhostCode 2. All rights reserved. Designed with <span class="heart">♥</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

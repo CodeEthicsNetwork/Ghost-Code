@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home - GhostCode 2">
+    <title>Home - GhostCode 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/ghost-logo.png" alt="GhostCode Logo">
+            <h1>GhostCode 2</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="frontend.html">Frontend</a></li>
+                <li><a href="backend.html">Backend</a></li>
+                <li><a href="fullstack.html">Fullstack</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Boo Ghost Images (Floating) -->
+    <img src="images/boo-ghost1.png" alt="Boo Ghost 1" class="boo-ghost boo-ghost1">
+    <img src="images/boo-ghost2.png" alt="Boo Ghost 2" class="boo-ghost boo-ghost2">
+    <img src="images/boo-ghost3.png" alt="Boo Ghost 3" class="boo-ghost boo-ghost3">
+    <img src="images/boo-ghost4.png" alt="Boo Ghost 4" class="boo-ghost boo-ghost4">
+
+    <main>
+        <section class="intro">
+            <h2>Welcome to GhostCode 2</h2>
+            <p>Your ultimate programming roadmap. Get started with Frontend, Backend, or Fullstack development.</p>
+        </section>
+
+        <!-- Roadmap Cards Section -->
+        <section id="topics" class="roadmaps">
+            <h2>Explore the Roadmaps</h2>
+            <div class="roadmap-container">
+                <!-- Frontend Card -->
+                <div class="roadmap-card">
+                    <img src="images/frontend-roadmap.png" alt="Frontend">
+                    <h3>Frontend Development</h3>
+                    <p>Learn HTML, CSS, JavaScript, and more.</p>
+                    <button onclick="window.location.href='frontend.html'">Explore Frontend</button>
+                </div>
+                <!-- Backend Card -->
+                <div class="roadmap-card">
+                    <img src="images/backend-roadmap.png" alt="Backend">
+                    <h3>Backend Development</h3>
+                    <p>Understand databases, APIs, and server-side scripting.</p>
+                    <button onclick="window.location.href='backend.html'">Explore Backend</button>
+                </div>
+                <!-- Fullstack Card -->
+                <div class="roadmap-card">
+                    <img src="images/fullstack-roadmap.png" alt="Fullstack">
+                    <h3>Fullstack Development</h3>
+                    <p>Combine frontend and backend knowledge to build complete applications.</p>
+                    <button onclick="window.location.href='fullstack.html'">Explore Fullstack</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 GhostCode 2. All rights reserved. Designed with <span class="heart">♥</span></p>
+    </footer>
+</body>
+</html>

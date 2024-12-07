@@ -1,0 +1,134 @@
+/* Basic body and layout styles */
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #000;
+    color: #00ff00;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header .logo img {
+    width: 60px;
+    vertical-align: middle;
+}
+
+header h1 {
+    font-size: 36px;
+    display: inline;
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Floating Boo Ghost Animations */
+.boo-ghost {
+    position: absolute;
+    animation: floatBoo 10s ease-in-out infinite;
+    opacity: 0.8;
+}
+
+.boo-ghost1 {
+    top: 10%;
+    left: 10%;
+}
+
+.boo-ghost2 {
+    top: 15%;
+    right: 20%;
+}
+
+.boo-ghost3 {
+    top: 30%;
+    left: 70%;
+}
+
+.boo-ghost4 {
+    bottom: 10%;
+    right: 10%;
+}
+
+/* Keyframes to move Boo Ghosts */
+@keyframes floatBoo {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    25% {
+        transform: translateY(-20px) translateX(20px);
+    }
+    50% {
+        transform: translateY(0) translateX(-20px);
+    }
+    75% {
+        transform: translateY(20px) translateX(10px);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
+/* Style for cards */
+.roadmap-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.roadmap-card {
+    background-color: #111;
+    border: 2px solid #00ff00;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.roadmap-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.9);
+}
+
+.roadmap-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #00ff00;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #00cc00;
+    transform: scale(1.1);
+}
